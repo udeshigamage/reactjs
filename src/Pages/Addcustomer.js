@@ -15,13 +15,29 @@ const Addcustomer = () => {
   const [formvalues, setformvalues] = useState(initialvalues);
   const [formErrors, setformerrors] = useState({});
   const [issubmit, setissubmit] = useState(false);
-  const SelectComponent = () => {
+
+  const selectcomponent = () => {
     const [selectedOption, setSelectedOption] = useState('');
   
     const handleSelectChange = (e) => {
       setSelectedOption(e.target.value);
     };
   
+
+    const handleClearForm = () => {
+        
+        setFormData({
+            firstname: " ",
+            lastname: "",
+            address: "",
+            email: "",
+            category: "",
+            mobileno: "",
+            officeno: "",
+            comments: "",
+        });
+      };
+
 
   const handlechange = (e) => {
     const { name, value } = e.target;
@@ -197,7 +213,7 @@ const Addcustomer = () => {
             <td></td>
             <td></td>
             <td class="cell">
-              <input type="reset" value="clear" className="inputBox" />
+              <input type="button" onClick={handleClearForm} value="clear" className="inputBox" />
             </td>
             <td class="cell">
               <input
