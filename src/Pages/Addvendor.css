@@ -9,4 +9,10 @@
 
 .labelerror {
   font-style: italic;
+  color: red;
+  font-size: 25px;
+}
+
+.input {
+  height: 100px;
 }
