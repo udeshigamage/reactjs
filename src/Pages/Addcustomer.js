@@ -5,8 +5,7 @@ const Addcustomer = () => {
   const initialvalues = {
     firstname: "",
     lastname: "",
-    address: "",
-    email: "",
+   
    
   };
   const [formvalues, setformvalues] = useState(initialvalues);
