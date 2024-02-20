@@ -10,8 +10,7 @@ const Addcustomer = () => {
    
   };
   const [formvalues, setformvalues] = useState(initialvalues);
-  const [formErrors, setformerrors] = useState({});
-  const [issubmit, setissubmit] = useState(false);
+  
   const SelectComponent = () => {
     const [selectedOption, setSelectedOption] = useState('');
   
